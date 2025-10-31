@@ -1,0 +1,12 @@
+{
+  "name": "pdf-protect-api",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.26.0",
+    "node-fetch": "2.6.7"
+  }
+}
