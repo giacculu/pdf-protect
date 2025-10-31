@@ -26,11 +26,13 @@ export default function Upload(){
     }
 
     // inform API to process
-    const resp = await fetch('/api/process', {
+    const API_URL = import.meta.env.VITE_API_URL // es. https://pdf-api.vercel.app
+    const resp = await fetch(`${API_URL}/process`, {
       method: 'POST',
       headers: {'Content-Type':'application/json'},
       body: JSON.stringify({ filename: file.name, path: data.path })
     })
+
 
     if(!resp.ok){
       setStatus('error: process request')
