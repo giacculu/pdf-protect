@@ -1,9 +1,0 @@
-{
-  "name": "pdf-protect-automation",
-  "private": true,
-  "workspaces": [
-    "frontend",
-    "api",
-    "worker"
-  ]
-}
